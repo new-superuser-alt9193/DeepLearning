@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import confusion_matrix
-
+from sklearn.preprocessing import StandardScaler
 from joblib import load
 load('random_forest_churn.joblib')
 
@@ -50,7 +50,13 @@ def getConfussionMatrix(y_test, y_pred):
 
 df = pd.read_csv('../../data/telecom_pca.csv')
 x = df.drop(columns=['TARGET'])
+columns = x.columns
 y = df['TARGET']
+
+scaler = StandardScaler()
+scaler.fit(x)
+x = scaler.transform(x)
+x = pd.DataFrame(x, columns= columns)
 
 x_train, x_test, y_train, y_test = train_test_split(x,y, test_size= 0.25, random_state= 1)
 
