@@ -1,4 +1,4 @@
-# Solución al reto TC3007C Euipo 2 Puebla
+# Solución al reto TC3007C Equipo 2 Puebla
 
 Link al repositorio de frontend: https://github.com/danoman17/NaatikApp.git
 
