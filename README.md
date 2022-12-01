@@ -6,6 +6,8 @@ Link al repositorio de backend: https://github.com/new-superuser-alt9193/DeepLea
 
 Documentación presente en la carpeta "administración"
 
+Código de ETL, modelación y evaluación en la carpeta "crisp-dm"
+
 Integrantes:
 *Fernando Jiménez Pereyra	A01734609
 *Daniel Flores Rodríguez 	A01734184
